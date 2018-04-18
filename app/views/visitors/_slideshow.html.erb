@@ -1,0 +1,18 @@
+<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <% photos.length.times do |x| %>
+      <li data-target="#carouselIndicators" data-slide-to=<%= x %> class=<%= 'active' if x == 0 %>></li>
+    <% end %>
+    <li class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </li>
+  </ol>
+  <div class="carousel-inner">
+    <% photos.each_with_index do |photo, index| %>
+      <div class="carousel-item <%= 'active' if index == 0 %>">
+        <%= image_tag "slideshow_top/#{photo}", class: 'd-block' %>
+      </div>
+    <% end %>
+  </div>
+</div>

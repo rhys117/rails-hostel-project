@@ -1,0 +1,271 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
+
+
+@mixin gradient-border() {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(75,130,170,1) 0%, rgba(128,128,128,0.21) 79%, rgba(128,128,128,0) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(75,130,170,1)), color-stop(79%, rgba(128,128,128,0.21)), color-stop(100%, rgba(128,128,128,0))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(75,130,170,1) 0%, rgba(128,128,128,0.21) 79%, rgba(128,128,128,0) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(75,130,170,1) 0%, rgba(128,128,128,0.21) 79%, rgba(128,128,128,0) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(75,130,170,1) 0%, rgba(128,128,128,0.21) 79%, rgba(128,128,128,0) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(75,130,170,1) 0%, rgba(128,128,128,0.21) 79%, rgba(128,128,128,0) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b82aa', endColorstr='#808080',GradientType=1 ); /* ie6-9 */
+}
+
+// Global
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html {
+  background: #fcffef;
+}
+
+// Main
+main {
+  background: #7accc8 image-url("background.jpg") 50% 0 repeat fixed;
+  background-size: 100% 100%;
+  .content {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1, h2, h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-shadow: 0 5px #458fa8;
+    padding-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    color: white;
+    font-weight: 200;
+  }
+  #vision {
+    &:after {
+      content: "";
+      height: 1px;
+      position: relative;
+      top: 25px;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      @include gradient-border;
+      margin-bottom: 60px;
+    }
+  }
+  #gallery-break {
+    background: image-url("gallery_break.jpg") 50% 0 no-repeat fixed;
+    background-size: 80% auto;
+    min-height: 600px;
+    margin-bottom: 30px;
+  }
+  #activities {
+    .row {
+      margin-bottom: 50px;
+    }
+  }
+  .vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  img {
+    width: 100%;
+  }
+  div {
+    h3:after {
+      content: "";
+      height: 1px;
+      position: relative;
+      top: 10px;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      @include gradient-border;
+    }
+  }
+}
+
+// Carousel
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators {
+  bottom:-30px;
+}
+.carousel-inner {
+   margin-bottom: 30px;
+}
+.corousel-options {
+  bottom: -100px;
+}
+#carouselIndicators ol li:last-of-type {
+  background: none;
+}
+
+.empty-space {
+  height: 1000px;
+}
+
+.nav-sidebar {
+  padding-top: 150px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+// Nav
+nav {
+  background: #fcffef;
+  .nav-logo, ul {
+    position: relative;
+    left: -40px;
+  }
+  .nav-logo {
+    height: 150px;
+    width: 150px;
+    top: 50px;
+  }
+  .nav-link {
+    padding: 0.3em 1em;
+  }
+  .social-media {
+    position: absolute;
+    left: 5px;
+    top: 340px;
+    margin-top: 20px;
+    a {
+      background-size: cover;
+      height: 25px;
+      width: 25px;
+      text-indent: -9999px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    #facebook {
+      background-image: image-url("icon_facebook.png");
+    }
+    #instagram {
+      background-image: image-url("icon_instagram.png")
+    }
+  }
+  ul {
+    position: absolute;
+    left: 120px;
+    top: 205px;
+    li {
+      color: #004b85;
+      a {
+        color: #004b85;
+        cursor: pointer;
+        }
+      &:after {
+        content: "";
+        position: relative;
+        left: 5px;
+        top: -3px;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 0px;
+        border-bottom: 1px solid #acc5ce;
+      }
+      &:hover::after{
+        transform: scaleX(0);
+        border-bottom: 1px solid #acc5ce;
+        transition: transform 250ms ease-in-out;
+        transform-origin:100% 50%; 
+      }
+      &:last-of-type:after {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) { 
+  main {
+    position: relative;
+    top: 65px;
+  }
+  .nav-large {
+    display: none;
+    padding: 0 0;
+  }
+  .row {
+    padding: 0 0;
+  }
+  .nav-mobile {
+    display: block;
+    width: 100%;
+    min-height: 55px;
+    background: #fcffef;
+    .nav {
+      width: 100%;
+      button {
+        font-size: 2em;
+        position: relative;
+        top: 10px;
+      }
+      .nav-mobile-logo {
+        width: 100%;
+        min-width: 60px;
+      }
+      .social-media {
+      position: static;
+      text-align: left;
+      height: 0px;
+      a {
+        position: relative;
+        float: right;
+        background-size: cover;
+        height: 35px;
+        width: 35px;
+        text-indent: -9999px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      #facebook {
+        background-image: image-url("icon_facebook.png");
+        margin-right: 10px;
+      }
+      #instagram {
+        background-image: image-url("icon_instagram.png")
+      }
+    }
+    }
+  }
+  #activities {
+    .row {
+      display: table;
+    }
+    .mob-first {
+      display: table-header-group;
+    }
+    .mob-second {
+      display: table-footer-group;
+    }
+    .vertical-center {
+      transform: none;
+    }
+  }
+}

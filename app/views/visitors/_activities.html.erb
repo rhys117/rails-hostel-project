@@ -1,0 +1,25 @@
+<% activities.each_with_index do |(activity, description), index| %>
+  <div class="row">
+    <% if index.even? %>
+      <div class='col-md-8 text-center'>
+        <h3><%= activity %></h3>
+        <p>
+          <%= description %>
+        </p>
+      </div>
+      <div class='col-md-4'>
+        <%= image_tag "activities/#{underscorize(activity)}.jpg", class: 'vertical-center' %>
+      </div>
+    <% else %>
+      <div class='col-md-4 mob-second'>
+        <%= image_tag "activities/#{underscorize(activity)}.jpg", class: 'vertical-center' %>
+      </div>
+      <div class='col-md-8 text-center mob-first'>
+        <h3><%= activity %></h3>
+        <p>
+          <%= description %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+<% end %>

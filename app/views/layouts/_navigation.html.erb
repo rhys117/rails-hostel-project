@@ -1,0 +1,29 @@
+<header>
+  <div class="nav-mobile fixed-top">
+    <div class="navbar">
+      <ul class="nav row">
+        <li class="nav-item col-2">
+          <button class="navbar-toggler nav-link" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+            &#9776;
+          </button>
+        </li>
+        <li class='nav-item col-8'>
+        </li>
+        <li class='nav-item col-2'>
+          <%= image_tag "logo.png", class: 'nav-mobile-logo' %>
+        </li>
+      </ul>
+      <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+        <ul class="nav navbar-nav">
+          <%= render 'layouts/navigation_links' %>
+          <li>
+            <div class='list-inline social-media text-center'>
+              <a id='instagram' class='list-inline-item' href='https://www.instagram.com/thebigkhostel/' target='_blank'>Instagram</a>
+              <a id='facebook' class='list-inline-item' href='https://www.facebook.com/thebigkhostel/' target='_blank'>Facebook</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
