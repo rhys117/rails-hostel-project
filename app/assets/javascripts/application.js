@@ -12,7 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery3
+//= require jquery
 //= require popper
 //= require bootstrap
 //= require_tree .
@@ -56,7 +56,6 @@ $(document).ready(function(){
 $(window).resize(galleryBreakWidth);
 
 function galleryBreakWidth() {
-  console.log($('#gallery-break').width())
   width = $('#gallery-break').width()
-  $('#gallery-break').css("height",width * 0.5);
+  $('#gallery-break').css("height", width * 0.75);
 }

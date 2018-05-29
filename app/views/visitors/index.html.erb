@@ -8,7 +8,11 @@
         <%= render partial: 'vision', locals: { vision: @vision } %>
       </section>
 
-      <section id="gallery-break" data-type='parallax' data-speed='10'></section>
+      <%= image_tag "gallery_break.jpg", class: "content-break" %>
+
+      <section id='hostel' class='content text-center'>
+        <%= render partial: 'hostel', locals: { hostel: @hostel } %>
+      </section>
 
       <section id="activities" class="content">
         <%= render partial: 'activities', locals: { activities: @activities } %>

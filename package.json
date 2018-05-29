@@ -1,5 +1,7 @@
 {
   "name": "big_k_temp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "parallax-imagescroll": "^0.2.3"
+  }
 }

@@ -13,6 +13,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b82aa', endColorstr='#808080',GradientType=1 ); /* ie6-9 */
 }
 
+$color-light-grey: #acc5ce;
+$color-dark-blue: #004b85;
+$color-aqua: #4197b5;
+
+
 // Global
 body {
   font-family: 'Raleway', sans-serif;
@@ -45,6 +50,7 @@ main {
 
   h1 {
     font-size: 2em;
+    padding-top: 35px;
   }
 
   h2 {
@@ -68,11 +74,14 @@ main {
       margin-bottom: 60px;
     }
   }
-  #gallery-break {
-    background: image-url("gallery_break.jpg") 50% 0 no-repeat fixed;
-    background-size: 80% auto;
-    min-height: 600px;
-    margin-bottom: 30px;
+  .img-holder {
+    min-height: 400px;
+  }
+  .content-break {
+    margin-bottom: 35px;
+  }
+  #hostel {
+    padding-bottom: 35px;
   }
   #activities {
     .row {
@@ -107,10 +116,36 @@ main {
     height: 100%;
 }
 .carousel-indicators {
-  bottom:-30px;
+  bottom:-40px;
+  background: none;
 }
-.carousel-inner {
-   margin-bottom: 30px;
+.carousel-indicators li {
+  border-radius: 50%;
+  border-top: 1px solid $color-aqua;
+  border-right: 1px solid $color-aqua;
+  border-left: 1px solid $color-aqua;
+  border-bottom: 1px solid $color-aqua;
+  margin-left: 6px;
+  margin-right: 6px;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+}
+.carousel-indicators li:hover {
+  background-color: rgba(65,151,181, 0.5)
+}
+.carousel-indicators li:last-of-type {
+  background-image: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234197b5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators .active {
+  background-color: $color-aqua !important;
 }
 .corousel-options {
   bottom: -100px;
@@ -172,9 +207,9 @@ nav {
     left: 120px;
     top: 205px;
     li {
-      color: #004b85;
+      color: $color-dark-blue;
       a {
-        color: #004b85;
+        color: $color-dark-blue;
         cursor: pointer;
         }
       &:after {
@@ -186,11 +221,11 @@ nav {
         margin: 0 auto;
         width: 80%;
         padding-top: 0px;
-        border-bottom: 1px solid #acc5ce;
+        border-bottom: 1px solid $color-light-grey;
       }
       &:hover::after{
         transform: scaleX(0);
-        border-bottom: 1px solid #acc5ce;
+        border-bottom: 1px solid $color-light-grey;
         transition: transform 250ms ease-in-out;
         transform-origin:100% 50%; 
       }

@@ -33,7 +33,6 @@ gem 'bootstrap', '~> 4.1.0'
 gem 'popper_js', '~> 1.12.9'
 gem 'jquery-rails'
 
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
