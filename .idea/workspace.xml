@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b821780-0e0e-48e1-b3f8-29ae0477339c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/activities/tonos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/activities/floating_paradise.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/visitors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/visitors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/english/activities.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/english/activities.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/english/vision.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/english/vision.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -70,8 +64,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
               </first_editor>
               <second_editor />
             </state>
@@ -298,12 +292,12 @@
       <workItem from="1531631508914" duration="586000" />
       <workItem from="1547537531774" duration="1062000" />
       <workItem from="1547539038204" duration="1295000" />
-      <workItem from="1548842457999" duration="739000" />
+      <workItem from="1548842457999" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5549000" />
+    <option name="totallyTimeSpent" value="5685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="877" extended-state="0" />
@@ -553,8 +547,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
           </first_editor>
           <second_editor />
         </state>
