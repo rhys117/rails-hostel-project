@@ -1,24 +1,6 @@
-# README
+# The Big K First Iteration Website
+This was a work in progress website for a client opening a hostel in Indonesia. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This first iteration was scraped after the projects requirements changed.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The design document is provided as a jpeg named Website_Mockup. Design of this website was not completed by myself.
